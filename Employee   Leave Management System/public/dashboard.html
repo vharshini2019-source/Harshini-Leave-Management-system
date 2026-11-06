@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Dashboard | Harshini HR</title>
+    <link rel="stylesheet" href="/css/dashboard.css">
+</head>
+<body>
+
+<div class="dashboard-container">
+
+    <aside class="sidebar">
+        <div class="logo">
+            <h2>Harshini <span>HR</span></h2>
+            <p>Leave Management</p>
+        </div>
+
+        <nav>
+            <a href="/dashboard" class="active">Dashboard</a>
+            <a href="/apply-leave">Apply for Leave</a>
+            <a href="/my-leaves">My Leave History</a>
+            <a href="/leave-balance">Leave Balance</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <a href="/">Home</a>
+            <button id="logoutButton">Logout</button>
+        </div>
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+            <div>
+                <h1>Employee Dashboard</h1>
+                <p>Welcome back! Here's your leave overview.</p>
+            </div>
+
+            <div class="profile">
+                <div class="profile-icon">E</div>
+                <span id="employeeEmail">Employee</span>
+            </div>
+        </header>
+
+        <section class="welcome-card">
+            <div>
+                <h2>Welcome, <span id="employeeName">Employee</span>!</h2>
+                <p>Manage your leaves easily and stay updated.</p>
+            </div>
+
+            <a href="/apply-leave" class="apply-btn">
+                + Apply for Leave
+            </a>
+        </section>
+
+        <section class="stats-grid">
+
+            <div class="stat-card">
+                <p>Total Leave Balance</p>
+                <h2 id="totalBalance">--</h2>
+                <span>Available days</span>
+            </div>
+
+            <div class="stat-card">
+                <p>Pending Requests</p>
+                <h2 id="pendingRequests">--</h2>
+                <span>Awaiting approval</span>
+            </div>
+
+            <div class="stat-card">
+                <p>Approved Leaves</p>
+                <h2 id="approvedLeaves">--</h2>
+                <span>Approved requests</span>
+            </div>
+
+            <div class="stat-card">
+                <p>Rejected Leaves</p>
+                <h2 id="rejectedLeaves">--</h2>
+                <span>Rejected requests</span>
+            </div>
+
+        </section>
+
+        <section class="recent-section">
+            <div class="section-heading">
+                <div>
+                    <h2>Recent Leave Requests</h2>
+                    <p>Check your latest leave application status.</p>
+                </div>
+
+                <a href="/my-leaves">View All</a>
+            </div>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Leave Type</th>
+                            <th>From Date</th>
+                            <th>To Date</th>
+                            <th>Days</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="leaveTableBody">
+                        <tr>
+                            <td colspan="5" class="empty-message">
+                                Loading leave requests...
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <footer>
+            © 2026 Harshini HR | Employee Leave Management System
+        </footer>
+
+    </main>
+</div>
+
+<script src="/js/dashboard.js"></script>
+</body>
+</html>

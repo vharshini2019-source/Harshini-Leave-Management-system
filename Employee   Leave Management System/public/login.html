@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Harshini HR</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+<div class="login-container">
+
+    <div class="login-left">
+        <a href="/" class="brand">
+            <span class="brand-icon">H</span>
+            Harshini<span>HR</span>
+        </a>
+
+        <div class="welcome-content">
+            <span class="tag">EMPLOYEE PORTAL</span>
+            <h1>Welcome Back!</h1>
+            <h2>Your Workplace, Simplified.</h2>
+            <p>
+                Manage your leaves, track your requests
+                and stay connected with your workplace
+                through one smart platform.
+            </p>
+
+            <div class="welcome-points">
+                <div>✓ Easy Leave Applications</div>
+                <div>✓ Real-time Request Tracking</div>
+                <div>✓ Simple Leave Management</div>
+            </div>
+        </div>
+
+        <div class="left-footer">
+            © 2026 Harshini Employee Leave Management System
+        </div>
+    </div>
+
+    <div class="login-right">
+
+        <div class="login-card">
+
+            <a href="/" class="back-home">← Back to Home</a>
+
+            <div class="login-heading">
+                <div class="login-icon">H</div>
+                <h2>Sign In</h2>
+                <p>Enter your credentials to access your account.</p>
+            </div>
+
+            <form id="loginForm">
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email address"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+
+                    <div class="password-box">
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Enter your password"
+                            required
+                        >
+                        <button
+                            type="button"
+                            id="togglePassword"
+                            class="show-password"
+                        >Show</button>
+                    </div>
+                </div>
+
+                <div class="form-options">
+                    <label class="remember">
+                        <input type="checkbox" id="rememberMe">
+                        Remember me
+                    </label>
+                </div>
+
+                <button type="submit" class="login-button" id="loginButton">
+                    Sign In <span>→</span>
+                </button>
+
+                <p id="message" class="message"></p>
+
+            </form>
+
+            <div class="register-link">
+                Don't have an account?
+                <a href="/register">Create Account</a>
+            </div>
+
+            <div class="secure-note">
+                <span>🔒</span> Your account information is protected.
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Leave History | Harshini HR</title>
+    <link rel="stylesheet" href="css/my-leaves.css">
+</head>
+<body>
+
+<header class="topbar">
+    <div class="brand">
+        <div class="logo">H</div>
+        <div>
+            <h2>HARSHINI HR</h2>
+            <span>Employee Leave Management</span>
+        </div>
+    </div>
+    <a href="/dashboard" class="back-btn">← Dashboard</a>
+</header>
+
+<main class="container">
+
+    <div class="heading">
+        <div>
+            <span class="tag">EMPLOYEE SERVICES</span>
+            <h1>My Leave History</h1>
+            <p>Track all your leave applications and their approval status.</p>
+        </div>
+        <a href="/apply-leave" class="apply-btn">+ Apply for Leave</a>
+    </div>
+
+    <section class="summary">
+        <div class="summary-card">
+            <span>Total Requests</span>
+            <h2 id="totalRequests">0</h2>
+        </div>
+        <div class="summary-card">
+            <span>Pending</span>
+            <h2 id="pendingRequests">0</h2>
+        </div>
+        <div class="summary-card">
+            <span>Approved</span>
+            <h2 id="approvedRequests">0</h2>
+        </div>
+        <div class="summary-card">
+            <span>Rejected</span>
+            <h2 id="rejectedRequests">0</h2>
+        </div>
+    </section>
+
+    <section class="history-card">
+        <div class="table-heading">
+            <h2>Leave Applications</h2>
+            <p>Your leave request records</p>
+        </div>
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                       <th>S.No.</th>
+                        <th>Leave Type</th>
+                        <th>From Date</th>
+                        <th>To Date</th>
+                        <th>Days</th>
+                        <th>Reason</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="leaveHistoryBody">
+                    <tr>
+                        <td colspan="7" class="empty">
+                            No leave requests available yet.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    © 2026 Harshini HR | Employee Leave Management System
+</footer>
+
+<script src="js/my-leaves.js"></script>
+</body>
+</html>

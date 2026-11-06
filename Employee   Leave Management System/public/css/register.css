@@ -1,0 +1,394 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: #f3f6fb;
+}
+
+.register-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+
+/* LEFT SECTION */
+
+.register-info {
+    width: 43%;
+    min-height: 100vh;
+    padding: 45px;
+    background: linear-gradient(145deg, #06152f, #003d53);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.brand h1 {
+    font-size: 34px;
+    letter-spacing: 0.5px;
+}
+
+.brand h1 span {
+    color: #12b8b5;
+}
+
+.brand p {
+    font-size: 14px;
+    color: #d7e8f0;
+    margin-top: 8px;
+}
+
+.info-content {
+    margin-top: 35px;
+}
+
+.info-content h2 {
+    font-size: 32px;
+    line-height: 1.4;
+}
+
+.info-content h2 span {
+    display: block;
+    color: #12b8b5;
+}
+
+.title-line,
+.form-line {
+    width: 65px;
+    height: 4px;
+    background: #12b8b5;
+    border-radius: 5px;
+    margin: 18px 0;
+}
+
+.info-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #d9e8ef;
+    max-width: 440px;
+}
+
+/* ILLUSTRATION */
+
+
+.register-illustration {
+    display: block;
+    width: 100%;
+    max-width: 570px;
+    height: 280px;
+    object-fit: contain;
+    object-position: left center;
+    margin: 12px 0;
+    border-radius: 12px;
+}
+
+
+/* FEATURES */
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 18px 12px;
+    background: rgba(0, 160, 170, 0.10);
+    border: 1px solid rgba(18, 184, 181, 0.25);
+    border-radius: 12px;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    flex: 1;
+}
+
+.feature-icon {
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: #087e8b;
+    color: white;
+    font-size: 20px;
+}
+
+.feature h3 {
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.feature p {
+    font-size: 11px;
+    line-height: 1.5;
+    color: #d9e8ef;
+}
+
+/* RIGHT SECTION */
+
+.register-form-section {
+    width: 57%;
+    min-height: 100vh;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 45px;
+}
+
+.form-box {
+    width: 100%;
+    max-width: 570px;
+}
+
+.form-box h2 {
+    font-size: 35px;
+    color: #102a43;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #778899;
+    font-size: 17px;
+}
+
+.form-line {
+    margin: 25px 0 30px;
+}
+
+/* INPUTS */
+
+label {
+    display: block;
+    color: #102a43;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 22px 0 10px;
+}
+
+input {
+    width: 100%;
+    height: 52px;
+    padding: 0 15px;
+    border: 1px solid #d5dce5;
+    border-radius: 8px;
+    outline: none;
+    font-size: 15px;
+    color: #263746;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #078b91;
+    box-shadow: 0 0 0 3px rgba(8, 126, 139, 0.10);
+}
+
+/* PASSWORD */
+
+.password-box {
+    position: relative;
+}
+
+.password-box input {
+    padding-right: 75px;
+}
+
+.toggle-btn {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+    color: #087e8b;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* MESSAGE */
+
+#message {
+    margin-top: 12px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* BUTTON */
+
+.register-btn {
+    width: 100%;
+    height: 55px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #078b91, #087e8b);
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.register-btn:hover {
+    background: #066873;
+    transform: translateY(-2px);
+}
+
+/* LOGIN */
+
+.login-link {
+    text-align: center;
+    margin-top: 25px;
+    color: #778899;
+    font-size: 15px;
+}
+
+.login-link a {
+    color: #087e8b;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* DIVIDER */
+
+.or-divider {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin: 25px 0;
+}
+
+.or-divider span {
+    flex: 1;
+    height: 1px;
+    background: #dce2e9;
+}
+
+.or-divider p {
+    color: #778899;
+}
+
+/* HOME LINK */
+
+.home-link {
+    display: block;
+    width: 220px;
+    margin: auto;
+    padding: 13px;
+    border: 1px solid #078b91;
+    border-radius: 8px;
+    color: #087e8b;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.home-link:hover {
+    background: #087e8b;
+    color: white;
+}
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+    .register-info {
+        padding: 30px;
+    }
+
+    .register-form-section {
+        padding: 30px;
+    }
+
+    .info-content h2 {
+        font-size: 27px;
+    }
+
+    .register-illustration {
+        height: 230px;
+    }
+
+    .features {
+        flex-wrap: wrap;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+    .register-container {
+        flex-direction: column;
+    }
+
+    .register-info,
+    .register-form-section {
+        width: 100%;
+        min-height: auto;
+    }
+
+    .register-info {
+        padding: 30px 24px;
+    }
+
+    .info-content {
+        margin: 35px 0 15px;
+    }
+
+    .register-illustration {
+        height: 230px;
+    }
+
+    .register-form-section {
+        padding: 40px 24px;
+    }
+
+    .form-box h2 {
+        font-size: 29px;
+    }
+}
+
+@media (max-width: 400px) {
+    .features {
+        flex-direction: column;
+    }
+
+    .register-info {
+        padding: 25px 18px;
+    }
+
+    .register-form-section {
+        padding: 30px 18px;
+    }
+}
+
+.register-info {
+    width: 43%;
+    min-height: 100vh;
+    padding: 45px;
+    background:
+        linear-gradient(
+            rgba(6, 21, 47, 0.88),
+            rgba(0, 61, 83, 0.90)
+        ),
+        url("https://images.unsplash.com/photo-1497366754035-f200968a6e72");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
