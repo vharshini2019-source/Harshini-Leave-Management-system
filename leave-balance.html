@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Balance | Harshini HR</title>
+    <link rel="stylesheet" href="/css/leave-balance.css">
+</head>
+
+<body>
+
+<header class="topbar">
+    <div class="brand">
+        <div class="logo">H</div>
+        <div>
+            <h2>HARSHINI HR</h2>
+            <span>Employee Leave Management</span>
+        </div>
+    </div>
+
+    <a href="/dashboard" class="back-btn">← Dashboard</a>
+</header>
+
+
+<main class="container">
+
+    <section class="heading">
+        <div>
+            <span class="tag">EMPLOYEE SERVICES</span>
+            <h1>My Leave Balance</h1>
+            <p>View your leave entitlement, used leaves and remaining balance.</p>
+        </div>
+
+        <a href="/apply-leave" class="apply-btn">+ Apply for Leave</a>
+    </section>
+
+
+    <!-- Overall Summary -->
+    <section class="total-card">
+        <div>
+            <span class="total-label">TOTAL LEAVE ALLOCATION</span>
+            <h2 id="totalAllocated">37 Days</h2>
+            <p>Your annual leave entitlement</p>
+        </div>
+
+        <div class="calendar-icon">📅</div>
+    </section>
+
+
+    <!-- Leave Balance Cards -->
+    <section class="balance-grid">
+
+        <!-- Casual Leave -->
+        <div class="balance-card">
+            <div class="card-top">
+                <div class="leave-icon casual">☀</div>
+                <span class="card-status">Casual Leave</span>
+            </div>
+
+            <h2 id="casualRemaining">12</h2>
+            <p class="remaining-text">Days Remaining</p>
+
+            <div class="progress-track">
+                <div class="progress-bar casual-bar" id="casualProgress"></div>
+            </div>
+
+            <div class="balance-details">
+                <span>Allocated: <b id="casualAllocated">12</b></span>
+                <span>Used: <b id="casualUsed">0</b></span>
+            </div>
+        </div>
+
+
+        <!-- Sick Leave -->
+        <div class="balance-card">
+            <div class="card-top">
+                <div class="leave-icon sick">✚</div>
+                <span class="card-status">Sick Leave</span>
+            </div>
+
+            <h2 id="sickRemaining">10</h2>
+            <p class="remaining-text">Days Remaining</p>
+
+            <div class="progress-track">
+                <div class="progress-bar sick-bar" id="sickProgress"></div>
+            </div>
+
+            <div class="balance-details">
+                <span>Allocated: <b id="sickAllocated">10</b></span>
+                <span>Used: <b id="sickUsed">0</b></span>
+            </div>
+        </div>
+
+
+        <!-- Earned Leave -->
+        <div class="balance-card">
+            <div class="card-top">
+                <div class="leave-icon earned">✈</div>
+                <span class="card-status">Earned Leave</span>
+            </div>
+
+            <h2 id="earnedRemaining">15</h2>
+            <p class="remaining-text">Days Remaining</p>
+
+            <div class="progress-track">
+                <div class="progress-bar earned-bar" id="earnedProgress"></div>
+            </div>
+
+            <div class="balance-details">
+                <span>Allocated: <b id="earnedAllocated">15</b></span>
+                <span>Used: <b id="earnedUsed">0</b></span>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Information Section -->
+    <section class="info-card">
+        <div class="info-icon">ℹ</div>
+
+        <div>
+            <h3>Leave Balance Information</h3>
+            <p>
+                Your leave balance is calculated based on your leave
+                allocation and approved leave requests. Pending requests
+                are not counted as used leaves.
+            </p>
+        </div>
+    </section>
+
+
+    <div class="bottom-action">
+        <p>Need time off? Submit a leave request.</p>
+        <a href="/apply-leave">Apply for Leave →</a>
+    </div>
+
+</main>
+
+
+<footer>
+    © 2026 Harshini HR | Employee Leave Management System
+</footer>
+
+<script src="/js/leave-balance.js"></script>
+
+</body>
+</html>

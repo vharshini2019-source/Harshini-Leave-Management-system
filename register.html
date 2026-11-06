@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Account | Harshini HR</title>
+
+    <link rel="stylesheet" href="/css/register.css">
+</head>
+
+<body>
+
+    <div class="register-container">
+
+        <!-- LEFT BRANDING SECTION -->
+        <section class="register-info">
+
+            <div class="brand">
+                <h1>Harshini <span>HR</span></h1>
+                <p>Employee Leave Management System</p>
+            </div>
+
+            <div class="info-content">
+
+                <h2>
+                    Smart Leave Management
+                    <span>for a Better Workplace</span>
+                </h2>
+
+                <div class="title-line"></div>
+
+                <p>
+                    Create your account to access a seamless
+                    leave management experience, stay organized
+                    and focused.
+                </p>
+
+            </div>
+
+            <img
+                src="/images/register.png"
+                alt="Employee working on a laptop"
+                class="register-illustration"
+            >
+
+            <div class="features">
+
+                <div class="feature">
+                    <span class="feature-icon">✓</span>
+                    <div>
+                        <h3>Secure</h3>
+                        <p>Your data is protected</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <span class="feature-icon">⚡</span>
+                    <div>
+                        <h3>Fast</h3>
+                        <p>Quick access anytime</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <span class="feature-icon">▥</span>
+                    <div>
+                        <h3>Efficient</h3>
+                        <p>Simplify leave management</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- RIGHT REGISTRATION SECTION -->
+        <section class="register-form-section">
+
+            <div class="form-box">
+
+                <h2>Create Account</h2>
+
+                <p class="subtitle">
+                    Register as a new employee
+                </p>
+
+                <div class="form-line"></div>
+
+
+                <!-- REGISTRATION FORM -->
+                <form id="registerForm">
+
+                    <!-- NAME -->
+                    <label for="name">Full Name</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your full name"
+                        autocomplete="name"
+                        required
+                    >
+
+
+                    <!-- EMAIL -->
+                    <label for="email">Email Address</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        autocomplete="email"
+                        required
+                    >
+
+
+                    <!-- PASSWORD -->
+                    <label for="password">Password</label>
+
+                    <div class="password-box">
+
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Create a password"
+                            minlength="8"
+                            autocomplete="new-password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            class="toggle-btn"
+                            onclick="togglePassword('password', this)"
+                        >
+                            Show
+                        </button>
+
+                    </div>
+
+
+                    <!-- CONFIRM PASSWORD -->
+                    <label for="confirmPassword">
+                        Confirm Password
+                    </label>
+
+                    <div class="password-box">
+
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            name="confirmPassword"
+                            placeholder="Re-enter your password"
+                            autocomplete="new-password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            class="toggle-btn"
+                            onclick="togglePassword('confirmPassword', this)"
+                        >
+                            Show
+                        </button>
+
+                    </div>
+
+
+                    <!-- DEPARTMENT -->
+                    <label for="department">Department</label>
+
+                    <input
+                        type="text"
+                        id="department"
+                        name="department"
+                        placeholder="Enter your department"
+                    >
+
+
+                    <!-- DESIGNATION -->
+                    <label for="designation">Designation</label>
+
+                    <input
+                        type="text"
+                        id="designation"
+                        name="designation"
+                        placeholder="Enter your designation"
+                    >
+
+
+                    <!-- JOINING DATE -->
+                    <label for="joining_date">Joining Date</label>
+
+                    <input
+                        type="date"
+                        id="joining_date"
+                        name="joining_date"
+                    >
+
+
+                    <!-- MESSAGE -->
+                    <p id="message" role="status" aria-live="polite"></p>
+
+
+                    <!-- CREATE ACCOUNT BUTTON -->
+                    <button
+                        type="submit"
+                        class="register-btn"
+                        id="registerButton"
+                    >
+                        Create Account
+                    </button>
+
+                </form>
+
+
+                <!-- LOGIN LINK -->
+                <p class="login-link">
+
+                    Already have an account?
+
+                    <a href="/login">
+                        Sign In
+                    </a>
+
+                </p>
+
+
+                <!-- DIVIDER -->
+                <div class="or-divider">
+
+                    <span></span>
+
+                    <p>or</p>
+
+                    <span></span>
+
+                </div>
+
+
+                <!-- HOME LINK -->
+                <a href="/" class="home-link">
+                    ⌂ &nbsp; Back to Home
+                </a>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <!-- REGISTRATION JAVASCRIPT -->
+    <script src="/js/register.js"></script>
+
+</body>
+
+</html>

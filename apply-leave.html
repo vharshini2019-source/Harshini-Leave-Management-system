@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply for Leave | Harshini HR</title>
+
+    <link rel="stylesheet" href="css/apply-leave.css">
+</head>
+
+<body>
+
+    <!-- Top Navigation -->
+    <header class="topbar">
+        <div class="brand">
+            <div class="brand-logo">H</div>
+            <div>
+                <h2>HARSHINI HR</h2>
+                <span>Employee Leave Management</span>
+            </div>
+        </div>
+
+        <a href="/dashboard" class="back-btn">
+            ← Back to Dashboard
+        </a>
+    </header>
+
+
+    <!-- Main Layout -->
+    <main class="apply-layout">
+
+        <!-- LEFT SIDE IMAGE SECTION -->
+        <aside class="apply-image">
+
+            <div class="image-content">
+
+                <span class="image-tag">HARSHINI HR PORTAL</span>
+
+                <h1>
+                    Take a Break.<br>
+                    Return Refreshed.
+                </h1>
+
+                <p>
+                    Your well-being matters to us.
+                    Manage your leave requests easily
+                    and maintain a healthy work-life balance.
+                </p>
+
+                <div class="image-bottom">
+                    <div class="small-line"></div>
+                    <span>YOUR WORKPLACE, YOUR WELL-BEING</span>
+                </div>
+
+            </div>
+
+        </aside>
+
+
+        <!-- RIGHT SIDE FORM SECTION -->
+        <section class="form-container">
+
+            <div class="form-heading">
+                <span class="form-label">EMPLOYEE SERVICES</span>
+
+                <h2>Apply for Leave</h2>
+
+                <p>
+                    Please provide the details below
+                    to submit your leave request.
+                </p>
+            </div>
+
+
+            <form id="leaveForm">
+
+                <!-- Leave Type -->
+                <div class="form-group">
+                    <label for="leaveType">
+                        Leave Type <span>*</span>
+                    </label>
+
+                    <select id="leaveType" name="leaveType" required>
+                        <option value="">Select Leave Type</option>
+                        <option value="Casual Leave">Casual Leave</option>
+                        <option value="Sick Leave">Sick Leave</option>
+                        <option value="Earned Leave">Earned Leave</option>
+                    </select>
+                </div>
+
+
+                <!-- Date Fields -->
+                <div class="date-row">
+
+                    <div class="form-group">
+                        <label for="fromDate">
+                            From Date <span>*</span>
+                        </label>
+
+                        <input
+                            type="date"
+                            id="fromDate"
+                            name="fromDate"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="toDate">
+                            To Date <span>*</span>
+                        </label>
+
+                        <input
+                            type="date"
+                            id="toDate"
+                            name="toDate"
+                            required
+                        >
+                    </div>
+
+                </div>
+
+
+                <!-- Reason -->
+                <div class="form-group">
+                    <label for="reason">
+                        Reason for Leave <span>*</span>
+                    </label>
+
+                    <textarea
+                        id="reason"
+                        name="reason"
+                        rows="5"
+                        placeholder="Please explain the reason for your leave..."
+                        required
+                    ></textarea>
+
+                    <small>Please provide at least 5 characters.</small>
+                </div>
+
+
+                <!-- Message -->
+                <div id="formMessage" class="form-message"></div>
+
+
+                <!-- Submit Button -->
+                <button type="submit" id="submitButton">
+                    Submit Leave Request
+                    <span>→</span>
+                </button>
+
+                <p class="form-note">
+                    Your request will be submitted for approval.
+                </p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        © 2026 Harshini HR | Employee Leave Management System
+    </footer>
+
+
+    <script src="js/apply-leave.js"></script>
+
+</body>
+</html>
